@@ -1,15 +1,11 @@
 # Best Practices for Spring Boot Applications
 
-## Index
-
-
-
 ## Table of Contents
 
 <!-- TOC -->
 * [Best Practices for Spring Boot Applications](#best-practices-for-spring-boot-applications)
-  * [Index](#index)
   * [Table of Contents](#table-of-contents)
+  * [Estructuras del proyecto y configuraciones](#estructuras-del-proyecto-y-configuraciones)
   * [Estándares de codificación](#estándares-de-codificación)
   * [Diseño y Arquitectura](#diseño-y-arquitectura)
   * [Testing](#testing)
@@ -20,7 +16,7 @@
   * [References](#references)
 <!-- TOC -->
 
-`## Estructuras del proyecto y configuraciones
+## Estructuras del proyecto y configuraciones
 
 - [ ] Estructura de un proyecto Spring Boot
     - [ ] Maven vs. Gradle
@@ -59,28 +55,26 @@
 ## Diseño y Arquitectura
 
 - [ ] Patrones de diseño
-    - [x] [Builder](builder-pattern.md)
-    - [x] [DTO](dto-pattern.md)
-    - [ ] Facade
     - [ ] Resiliencia & Circuit Breaker
         - [ ] Spring Retry
         - [ ] Resilience4j
 - [ ] API Restful Design
-    - [ ] Controllers
-        - [ ] Input Data Validation
-        - [ ] Pagination
-        - [ ] Versioning
+    - [ ] [Controllers](diseño-y-arquitectura/api-restful-design/controllers.md)
+        - [ ] [Input Data Validation](diseño-y-arquitectura/api-restful-design/controllers.md#input-data-validation)
+        - [ ] [Pagination](diseño-y-arquitectura/api-restful-design/controllers.md#pagination)
+        - [ ] [Versioning](diseño-y-arquitectura/api-restful-design/controllers.md#versioning)
     - [ ] Services
-        - [ ] DTO Pattern
-        - [ ] Builder Pattern
-        - [ ] Facade Pattern
+        - [x] [Builder](diseño-y-arquitectura/patrones-de-diseño/builder-pattern.md)
+        - [x] [DTO](diseño-y-arquitectura/patrones-de-diseño/dto-pattern.md)
+        - [ ] Facade
     - [ ] Repositories
         - [ ] Spring Data JPA
         - [ ] Spring Data JDBC
         - [ ] Spring Data R2DBC
-    - [ ] Error Handling
-        - [ ] Global Exception Handler
-        - [ ] Custom Exceptions
+    - [ ] [Error Handling](diseño-y-arquitectura/api-restful-design/error-handling.md)
+        - [ ] [Custom Exceptions](diseño-y-arquitectura/api-restful-design/error-handling.md#custom-exceptions)
+        - [ ] [Global Exception Handler](diseño-y-arquitectura/api-restful-design/error-handling.md#global-exception-handler)
+        - [ ] [Custom Error Response](diseño-y-arquitectura/api-restful-design/error-handling.md#custom-error-response)
 - [ ] Layer Architecture
 - [ ] Microservices Architecture
 - [ ] Event Driven Architecture
@@ -115,54 +109,54 @@
 ## Seguridad
 
 - [ ] Autenticación y autorización
-  - [ ] Spring Security
-  - [ ] OAuth2
-  - [ ] JWT
+    - [ ] Spring Security
+    - [ ] OAuth2
+    - [ ] JWT
 - [ ] OWASP Dependency Check
 - [ ] Validación de entrada
-  - [ ] SQL Injection
-  - [ ] XSS
+    - [ ] SQL Injection
+    - [ ] XSS
 - [ ] Seguridad en aplicación
-  - [ ] DoS
+    - [ ] DoS
 - [ ] Cifrado y seguridad de datos.
-  - [ ] Bcrypt
-  - [ ] AES
-  - [ ] RSA
+    - [ ] Bcrypt
+    - [ ] AES
+    - [ ] RSA
 - [ ] HTTPS
 - [ ] Snyk / WhiteSource - Vulnerability Scanner
 - [ ] Gestión de Secrets
-  - [ ] Hashicorp Vault
-  - [ ] Azure Key Vault
+    - [ ] Hashicorp Vault
+    - [ ] Azure Key Vault
 
 ## Documentación
 
 - [ ] Documentación de API
-  - [ ] Swagger
-  - [ ] OpenAPI
+    - [ ] Swagger
+    - [ ] OpenAPI
 - [ ] Logs y Monitorización
-  - [ ] Actuator
-  - [ ] Logback
-  - [ ] Micrometer
-  - [ ] Prometheus
-  - [ ] Grafana
+    - [ ] Actuator
+    - [ ] Logback
+    - [ ] Micrometer
+    - [ ] Prometheus
+    - [ ] Grafana
 - [ ] Monitorización distribuida
-  - [ ] Jaeger
-  - [ ] Zipkin
+    - [ ] Jaeger
+    - [ ] Zipkin
 - [ ] Guías de Usuario y Administrador
-  - [ ] README.md
-  - [ ] CHANGELOG.md
+    - [ ] README.md
+    - [ ] CHANGELOG.md
 
 ## Despliegue y Operaciones
 
 - [ ] Docker - Contenedores
-  - [ ] Dockerfile
+    - [ ] Dockerfile
 - [ ] Kubernetes - Orquestación
 - [ ] Helm-Charts
 - [ ] CI/CD
-  - [ ] GitHub Actions
-  - [ ] Azure Pipelines
+    - [ ] GitHub Actions
+    - [ ] Azure Pipelines
 - [ ] Cloud
-  - [ ] Azure
+    - [ ] Azure
 - [ ] Configuración de Logs y Monitoreo en Kubernetes
 - [ ] IaaS, PaaS, SaaS Considerations
 - [ ] Monitoreo y Alertas
